@@ -98,7 +98,7 @@
 <div class="output-container">
     <button onclick="extractSensitiveFiles()">Extract Sensitive Files URLs</button>
     <button class="clear-btn" onclick="clearOutput('outputSensitive')">Clear Output</button>
-    <textarea id="outputSensitive" placeholder="Sensitive files URLs (iso, exe, zip, 7z, tar, gz, invoice, api, v1, secret, token, @, == , old, bak, dll)  will appear here... " readonly></textarea>
+    <textarea id="outputSensitive" placeholder="Sensitive files URLs (iso, exe, zip, 7z, tar, gz, invoice, api, v1, secret, token, @, == , old, bak, dll, .xls, .sql, .docx, .ppt, .tgz, .rar, .tar.gz )  will appear here... " readonly></textarea>
 </div>
 
 <!-- Add More Sensitive Words -->
@@ -110,7 +110,7 @@
 
 <script>
     // Predefined sensitive words
-    let sensitiveWords = [".iso", ".exe", ".zip", ".7z", ".tar", ".gz", ".dll", "invoice", "api", "secret", "token", "@", "%40", "==" , ".bak" , ".old" , "/v1" , "/v2" , "/v3" , "/v4" , "/v5"];
+    let sensitiveWords = [".iso", ".exe", ".zip", ".7z", ".tar", ".gz", ".dll", "invoice", "api", "secret", "token", "@", "%40", "==" , ".bak" , ".old" , "/v1" , "/v2" , "/v3" , "/v4" , "/v5" ,  .xls , .sql , .docx , .pptx , .tgz , .rar ];
 
     // Function to extract unique IPs
     function extractUniqueIPs() {
